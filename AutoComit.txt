@@ -2,5 +2,6 @@ SET AUTOCOMMIT=0;
 START TRANSACTION;
 INSERT INTO professor (professor_id,administrador, matricula) VALUES(1, 1, 789554694);
 INSERT INTO avaliacao (entrega_id, turma_aluno_id ,nota,comentarios ) VALUES(08, 02, 5.1,"Muito boa!");
+SELECT * FROM professor;
 COMMIT;
 SET AUTOCOMMIT=1;
