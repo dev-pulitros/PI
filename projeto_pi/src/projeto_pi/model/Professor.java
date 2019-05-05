@@ -1,19 +1,19 @@
-package projeto_pi;
+package model;
 
-import java.util.*;
+//import java.util.*;
 
 public class Professor extends Usuario {
 	int idProf;
 	int administrador;
 	String matricula; 
-	ArrayList<Banca> listaBanca;
+	//ArrayList<Banca> listaBanca;
 	
-	public Professor(int idUsuario, String nome, String email, String senha, int idProf, int administrador, String matricula, ArrayList<Banca> listaBanca) {
+	public Professor(int idUsuario, String nome, String email, String senha, int idProf, int administrador, String matricula) {
 		super(idUsuario, nome, email, senha);
 		this.idProf = idProf;
 		this.administrador = administrador;
 		this.matricula = matricula;
-		this.listaBanca = listaBanca;
+		//this.listaBanca = listaBanca;
 	}
 	
 	public Professor() {

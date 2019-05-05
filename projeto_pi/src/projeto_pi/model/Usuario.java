@@ -1,4 +1,4 @@
-package projeto_pi;
+package model;
 
 public abstract class Usuario {
 	int idUsuario;
