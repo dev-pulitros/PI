@@ -1,13 +1,14 @@
-package projeto_pi;
+package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import model.Usuario;
 
 public class UsuarioDAO {
 	public void criar(Usuario usuario) {
-		String sqlInsert = "INSERT INTO pais(nome, populacao, area) VALUES (?, ?, ?)";
+		String sqlInsert = "INSERT INTO usuario(nome, email, senha) VALUES (?, ?, ?)";
 		try (Connection conn = ConnectionFactory.obtemConexao();
 				PreparedStatement stm = conn.prepareStatement(sqlInsert);) {
 		stm.setString(1, usuario.getNome());
