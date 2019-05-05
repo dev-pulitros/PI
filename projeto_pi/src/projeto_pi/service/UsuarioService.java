@@ -1,4 +1,7 @@
-package projeto_pi;
+package service;
+
+import dao.UsuarioDAO;
+import model.Usuario;
 
 public class UsuarioService {
 	UsuarioDAO dao;

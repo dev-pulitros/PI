@@ -1,4 +1,8 @@
-package projeto_pi;
+package service;
+
+import model.Professor;
+import dao.ProfessorDAO;
+import java.util.ArrayList;
 
 public class ProfessorService {
 	ProfessorDAO dao;
@@ -19,8 +23,16 @@ public class ProfessorService {
 		dao.excluir(to);
 	}
 	
-	public Professor carregar(int id) {
-		Professor to = dao.carregar(id);
+	public ArrayList<Professor> carregar(int id) {
+		ArrayList<Professor> to = dao.carregar(id);
 		return to;
+	}
+	
+	public ArrayList<Professor> carregar(){
+		return dao.carregar();
+	}
+	
+	public Professor carregarP(int id) {
+		return dao.carregarP(id);
 	}
 }
